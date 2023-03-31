@@ -2,6 +2,10 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+// import { AngularFireModule } from '@angular/fire/compat';
+// import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
+// import { environment } from './environment';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MainframeComponent } from './mainframe/mainframe.component';
@@ -25,7 +29,9 @@ import { ChatlistComponent } from './chatlist/chatlist.component';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    // AngularFireModule.initializeApp(environment.firebaseConfig),
+    // AngularFirestoreModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
