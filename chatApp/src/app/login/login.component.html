@@ -1,0 +1,7 @@
+<form class="grid content-center" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+  <input formControlName="username" class="text-lg border-b my-5 border-blue-600 font-semibold p-3" placeholder="Username"/>
+  <input formControlName="password" class="text-lg border-b my-5 border-blue-600 font-semibold p-3" placeholder="Password" type="password"/>
+
+  <button type="submit" class="bg-blue-600 text-white text-lg rounded shadow uppercase text-semibold p-2.5">Login Now!</button>
+  <button routerLink="/user/signup" type="button" class="mt-10 bg-white border border-blue-600 text-blue-600 text-lg rounded shadow uppercase text-semibold p-2.5">Sign up Now!</button>
+</form>
